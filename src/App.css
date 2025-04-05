@@ -1,0 +1,169 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensures the content takes up the full viewport height */
+  line-height: 1.6;
+  font-size: 16px;
+  background-image: url('https://img.freepik.com/free-photo/delicious-black-pasta-dish-copy-space_23-2148469869.jpg'); /* Example background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(0px); /* No blur effect */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Whole Page Styling */
+.whole-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  /* Flexbox for Centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensures the content takes up the full viewport height */
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6347; /* Tomato color */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar Styling */
+input[type="text"] {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ff6347;
+  box-shadow: 0 2px 8px rgba(255, 99, 71, 0.3);
+}
+
+/* Slider Container */
+.slider-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+input[type="range"] {
+  width: 80%;
+  max-width: 400px;
+  margin: 10px 0;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ff6347; /* Tomato color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ff6347;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Recipes Container */
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center; /* Centers the grid items horizontally */
+}
+
+/* Individual Recipe Card */
+.recipe {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recipe:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.recipe h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.recipe a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 8px 12px;
+  background-color: #ff6347;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.recipe a:hover {
+  background-color: #e5533d;
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+  text-align: center;
+}
+
+.footer a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
