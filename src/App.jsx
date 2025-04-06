@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import RecInfo from './components/RecInfo';
+// import RecInfo from './components/RecInfo';
 const ACCESS_KEY = import.meta.env.VITE_APP_API_KEY;
+import { Link } from "react-router-dom";
 
 function App() {
   const [list, setList] = useState(null);
@@ -60,7 +61,10 @@ function App() {
         <div className='recipe' key={recipe.id}>
           <img src={recipe.image} alt={recipe.title} width='200px' />
           <h3>{recipe.title}</h3>
-          <a href={`https://spoonacular.com/recipes/${recipe.title}-${recipe.id}`} target="_blank" rel="noopener noreferrer">View Recipe</a>
+          <p>Recipe ID: #{recipe.id} </p>
+          <Link to={`/foodDetails/${recipe.id}`} className="details-link">
+            View Details
+          </Link>
           
         </div>
       ))}

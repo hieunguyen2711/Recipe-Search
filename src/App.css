@@ -21,11 +21,20 @@ body, html {
   transition: filter 0.3s ease-in-out;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
 /* Whole Page Styling */
 .whole-page {
+  /* Add padding to prevent content from being blocked by the fixed nav */
+  padding-top: 60px; /* Adjust based on the height of the nav */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
   text-align: center;
   background-color: white;
   /* Flexbox for Centering */
@@ -166,4 +175,51 @@ input[type="range"]::-moz-range-thumb {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.home-link {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000; /* Ensure it stays above other elements */
+  list-style: none;
+}
+
+.home-link a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-tag {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-tag:hover {
+  background-color: #0056b3;
 }

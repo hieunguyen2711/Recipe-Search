@@ -1,0 +1,86 @@
+.food-detail {
+  font-family: Arial, sans-serif;
+  padding: 80px 20px 20px; /* Added top padding to account for the fixed nav */
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-container {
+  text-align: center;
+}
+
+.details-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.details-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.details-container p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8; /* Adjusted for better readability */
+  text-align: justify; /* Makes the text look more polished */
+  margin-bottom: 20px; /* Adds spacing after the summary */
+}
+
+.details-container h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 20px;
+}
+
+.details-container ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.details-container ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.details-container ol {
+  list-style-type: decimal;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.details-container ol li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nutrition-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adds spacing above the chart */
+}
+
+.nutrition-bar-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adds spacing above the bar chart */
+  width: 100%;
+}
