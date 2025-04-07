@@ -1,37 +1,35 @@
-# Web Development Project 5 - *Data Dashboard*
+# Web Development Project 6 - *Data Dashboard Updated*
 
 Submitted by: **Hieu Nguyen**
 
-This web app: **allows user to search and view food recipes of their choice**
+This web app: **allows users to search for a food of their choice and view the detailed recipe of that food**
 
-Time spent: **10** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The site has a dashboard displaying a list of data fetched using an API call**
-  - The dashboard should display at least 10 unique items, one per row
-  - The dashboard includes at least two features in each row
-- [x] **`useEffect` React hook and `async`/`await` are used**
-- [x] **The app dashboard includes at least three summary statistics about the data** 
-  - The app dashboard includes at least three summary statistics about the data, such as:
-    - *insert details here*
-- [x] **A search bar allows the user to search for an item in the fetched data**
-  - The search bar **correctly** filters items in the list, only displaying items matching the search query
-  - The list of results dynamically updates as the user types into the search bar
-- [x] **An additional filter allows the user to restrict displayed items by specified categories**
-  - The filter restricts items in the list using a **different attribute** than the search bar 
-  - The filter **correctly** filters items in the list, only displaying items matching the filter attribute in the dashboard
-  - The dashboard list dynamically updates as the user adjusts the filter
+- [x] **Clicking on an item in the list view displays more details about it**
+  - Clicking on an item in the dashboard list navigates to a detail view for that item
+  - Detail view includes extra information about the item not included in the dashboard view
+  - The same sidebar is displayed in detail view as in dashboard view
+  - *To ensure an accurate grade, your sidebar **must** be viewable when showing the details view in your recording.*
+- [x] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
+  -  *To ensure an accurate grade, the URL/address bar of your web browser **must** be viewable in your recording.*
+- [x] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
+  - At least two charts should be incorporated into the dashboard view of the site
+  - Each chart should describe a different aspect of the dataset
+
 
 The following **optional** features are implemented:
 
-- [ ] Multiple filters can be applied simultaneously
-- [x] Filters use different input types
-  - e.g., as a text input, a dropdown or radio selection, and/or a slider
-- [x] The user can enter specific bounds for filter values
+- [x] The site’s customized dashboard contains more content that explains what is interesting about the data 
+  - e.g., an additional description, graph annotation, suggestion for which filters to use, or an additional page that explains more about the data
+- [x] The site allows users to toggle between different data visualizations
+  - User should be able to use some mechanism to toggle between displaying and hiding visualizations 
 
+  
 The following **additional** features are implemented:
 
 * [ ] List anything else that you added to improve the site's functionality!
@@ -40,10 +38,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGpkNTIwMzBzYjY3OWt3dGxkcmNsZmFjcGRwNDU0eHlzODd3bGg3ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lGeI8rErYKxRZj3G0A/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHB2MmpkZWo4eDYwMHlqOTU4cjU2bjVvbnp0aWtiaHNieGNsaXduYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RHZz2KOEvn1qgK8jaI/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ScreenToGif 
+GIF created with ScreenToGif  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -52,7 +50,7 @@ GIF created with ScreenToGif
 ## Notes
 
 Describe any challenges encountered while building the app.
-I met challenges in controling the quota and requests used in a day
+I met a lot of challenges in understanding Router and implementing it in my code. Also, it is hard to use recharts
 
 ## License
 
